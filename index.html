@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Loom — we build websites with you, not just for you. A collaborative studio that turns your ideas into a site you're proud of." />
+  <meta name="theme-color" content="#0b0d14" />
+  <title>Loom · Websites, built with you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="Loom home">
+        <span class="brand__mark">🧵</span>
+        <span class="brand__name">Loom</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Loom</a>
+        <a href="#work">Showcase</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#start" class="btn btn--primary btn--sm">Start a project</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile" id="navMobile" aria-label="Mobile">
+      <a href="#how">How it works</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Loom</a>
+      <a href="#work">Showcase</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#start" class="btn btn--primary">Start a project</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">A collaborative website studio</p>
+        <h1 class="hero__title reveal">
+          We build your website
+          <span class="hero__accent">with you</span>,
+          not just for you.
+        </h1>
+        <p class="hero__lead reveal">
+          Most builders hand you a blank canvas and wish you luck. Loom pairs you
+          with a design partner and a guided process, so your site comes together
+          fast — and actually looks like <em>you</em>.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#start" class="btn btn--primary btn--lg">Start your project</a>
+          <a href="#how" class="btn btn--ghost btn--lg">See how it works</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><span class="stat__num" data-count="1200">0</span><span class="stat__label">Sites launched</span></div>
+          <div class="stat"><span class="stat__num" data-count="14">0</span><span class="stat__label">Day avg. launch</span></div>
+          <div class="stat"><span class="stat__num" data-count="98">0</span><span class="stat__suffix">%</span><span class="stat__label">Would recommend</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS / TRUST -->
+    <section class="marquee" aria-label="Trusted by">
+      <div class="marquee__track">
+        <span>Freelancers</span><span>•</span><span>Local shops</span><span>•</span>
+        <span>Creators</span><span>•</span><span>Startups</span><span>•</span>
+        <span>Nonprofits</span><span>•</span><span>Restaurants</span><span>•</span>
+        <span>Freelancers</span><span>•</span><span>Local shops</span><span>•</span>
+        <span>Creators</span><span>•</span><span>Startups</span><span>•</span>
+        <span>Nonprofits</span><span>•</span><span>Restaurants</span><span>•</span>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">The process</p>
+          <h2>Three steps. One partner by your side.</h2>
+          <p class="section__sub">No jargon, no guesswork. We work alongside you from first idea to launch day.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <div class="step__num">01</div>
+            <h3>Share your vision</h3>
+            <p>Tell us what you want in plain words. We ask the right questions and translate your goals into a clear plan.</p>
+          </article>
+          <article class="step reveal">
+            <div class="step__num">02</div>
+            <h3>Build together</h3>
+            <p>Watch your site take shape in real time. Give feedback, we adjust on the spot — it's a conversation, not a handoff.</p>
+          </article>
+          <article class="step reveal">
+            <div class="step__num">03</div>
+            <h3>Launch &amp; grow</h3>
+            <p>We ship it live, hand you the keys, and stay available for tweaks as your business grows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">What we build</p>
+          <h2>Whatever your idea needs</h2>
+          <p class="section__sub">Pick a starting point — we tailor everything from there.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal" tabindex="0">
+            <div class="card__icon">🏪</div>
+            <h3>Business sites</h3>
+            <p>Clean, trustworthy pages that turn visitors into customers and calls.</p>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__icon">🎨</div>
+            <h3>Portfolios</h3>
+            <p>Let your work shine with layouts designed to make people stop scrolling.</p>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__icon">🛍️</div>
+            <h3>Online stores</h3>
+            <p>Sell products with a checkout that's smooth on every device.</p>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__icon">📅</div>
+            <h3>Booking &amp; services</h3>
+            <p>Let clients book, pay, and get in touch without the back-and-forth.</p>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__icon">✍️</div>
+            <h3>Blogs &amp; content</h3>
+            <p>Publish with confidence on a site built for readers and search engines.</p>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__icon">🚀</div>
+            <h3>Landing pages</h3>
+            <p>Launch a product or campaign with a focused page that converts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY LOOM -->
+    <section id="why" class="section">
+      <div class="container why__grid">
+        <div class="why__intro reveal">
+          <p class="eyebrow">Why Loom</p>
+          <h2>What makes us different</h2>
+          <p class="section__sub">
+            DIY builders leave you alone. Agencies leave you out. Loom keeps you
+            in the room the whole time.
+          </p>
+          <a href="#start" class="btn btn--primary">Let's build yours</a>
+        </div>
+        <ul class="why__list">
+          <li class="reveal"><span class="why__check">✓</span><div><strong>A real design partner</strong><p>Not a template library — a person who gets your goals and guides the choices.</p></div></li>
+          <li class="reveal"><span class="why__check">✓</span><div><strong>You stay in control</strong><p>See every change as it happens and own your site completely when it's done.</p></div></li>
+          <li class="reveal"><span class="why__check">✓</span><div><strong>Fast, honest timelines</strong><p>Most sites launch in about two weeks. We tell you exactly where things stand.</p></div></li>
+          <li class="reveal"><span class="why__check">✓</span><div><strong>No surprise bills</strong><p>Clear, upfront pricing. What we quote is what you pay.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section id="work" class="section section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Showcase</p>
+          <h2>A few we built together</h2>
+          <p class="section__sub">Different people, different goals — all made in collaboration.</p>
+        </div>
+        <div class="showcase">
+          <article class="showcase__item reveal" style="--c1:#6d7bff;--c2:#9d6bff">
+            <div class="showcase__thumb"><span>Aurora Coffee</span></div>
+            <div class="showcase__meta"><h3>Aurora Coffee</h3><p>Local café · online ordering</p></div>
+          </article>
+          <article class="showcase__item reveal" style="--c1:#ff6d9d;--c2:#ff9d6b">
+            <div class="showcase__thumb"><span>Mara Studio</span></div>
+            <div class="showcase__meta"><h3>Mara Studio</h3><p>Photographer · portfolio</p></div>
+          </article>
+          <article class="showcase__item reveal" style="--c1:#43e6c0;--c2:#43b0e6">
+            <div class="showcase__thumb"><span>Pine &amp; Co</span></div>
+            <div class="showcase__meta"><h3>Pine &amp; Co</h3><p>Furniture maker · store</p></div>
+          </article>
+          <article class="showcase__item reveal" style="--c1:#e6c043;--c2:#e67e43">
+            <div class="showcase__thumb"><span>Harbor Yoga</span></div>
+            <div class="showcase__meta"><h3>Harbor Yoga</h3><p>Studio · class booking</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple, transparent plans</h2>
+          <p class="section__sub">Pay once to launch, or partner with us ongoing. No hidden fees.</p>
+        </div>
+        <div class="pricing">
+          <article class="price reveal">
+            <h3 class="price__name">Starter</h3>
+            <p class="price__amount">$499<span>/ one-time</span></p>
+            <p class="price__desc">A clean one-page site to get you online fast.</p>
+            <ul class="price__features">
+              <li>1-page custom design</li>
+              <li>Mobile responsive</li>
+              <li>Contact form</li>
+              <li>Launch in ~1 week</li>
+            </ul>
+            <a href="#start" class="btn btn--ghost btn--block">Choose Starter</a>
+          </article>
+          <article class="price price--featured reveal">
+            <div class="price__badge">Most popular</div>
+            <h3 class="price__name">Studio</h3>
+            <p class="price__amount">$1,299<span>/ one-time</span></p>
+            <p class="price__desc">A full multi-page site, built with you end to end.</p>
+            <ul class="price__features">
+              <li>Up to 6 custom pages</li>
+              <li>Collaborative design sessions</li>
+              <li>SEO &amp; speed optimized</li>
+              <li>Store or booking ready</li>
+              <li>30 days of free tweaks</li>
+            </ul>
+            <a href="#start" class="btn btn--primary btn--block">Choose Studio</a>
+          </article>
+          <article class="price reveal">
+            <h3 class="price__name">Partner</h3>
+            <p class="price__amount">$149<span>/ month</span></p>
+            <p class="price__desc">We build, host, and keep improving your site over time.</p>
+            <ul class="price__features">
+              <li>Everything in Studio</li>
+              <li>Hosting &amp; maintenance</li>
+              <li>Monthly updates</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#start" class="btn btn--ghost btn--block">Choose Partner</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- START A PROJECT (interactive multi-step) -->
+    <section id="start" class="section section--alt">
+      <div class="container start__grid">
+        <div class="start__pitch reveal">
+          <p class="eyebrow">Let's begin</p>
+          <h2>Start your project in 3 quick steps</h2>
+          <p class="section__sub">
+            Tell us a little about what you need. We'll reach out within one
+            business day with a plan and a quote — no commitment required.
+          </p>
+          <ul class="start__assure">
+            <li>✓ Free consultation</li>
+            <li>✓ No obligation</li>
+            <li>✓ Reply within 24 hours</li>
+          </ul>
+        </div>
+
+        <form class="wizard" id="wizard" novalidate>
+          <div class="wizard__progress" aria-hidden="true">
+            <div class="wizard__bar" id="wizardBar"></div>
+          </div>
+          <p class="wizard__count" id="wizardCount">Step 1 of 3</p>
+
+          <!-- Step 1 -->
+          <fieldset class="wizard__step is-active" data-step="1">
+            <legend>What kind of site do you need?</legend>
+            <div class="chooser">
+              <label class="choice"><input type="radio" name="type" value="Business site" required><span>🏪 Business</span></label>
+              <label class="choice"><input type="radio" name="type" value="Portfolio"><span>🎨 Portfolio</span></label>
+              <label class="choice"><input type="radio" name="type" value="Online store"><span>🛍️ Store</span></label>
+              <label class="choice"><input type="radio" name="type" value="Booking / services"><span>📅 Booking</span></label>
+              <label class="choice"><input type="radio" name="type" value="Blog / content"><span>✍️ Blog</span></label>
+              <label class="choice"><input type="radio" name="type" value="Not sure yet"><span>🤔 Not sure</span></label>
+            </div>
+            <p class="field__error" data-error="type"></p>
+          </fieldset>
+
+          <!-- Step 2 -->
+          <fieldset class="wizard__step" data-step="2">
+            <legend>Tell us about it</legend>
+            <label class="field">
+              <span>Project / business name</span>
+              <input type="text" name="project" placeholder="e.g. Aurora Coffee" required>
+              <small class="field__error" data-error="project"></small>
+            </label>
+            <label class="field">
+              <span>What's the goal of your site?</span>
+              <textarea name="goal" rows="3" placeholder="e.g. Let customers order coffee online and find our hours."></textarea>
+            </label>
+            <label class="field">
+              <span>Timeline</span>
+              <select name="timeline">
+                <option value="ASAP">As soon as possible</option>
+                <option value="2-4 weeks" selected>In 2–4 weeks</option>
+                <option value="1-2 months">In 1–2 months</option>
+                <option value="Just exploring">Just exploring</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <!-- Step 3 -->
+          <fieldset class="wizard__step" data-step="3">
+            <legend>Where can we reach you?</legend>
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="name" placeholder="Jamie Rivera" required>
+              <small class="field__error" data-error="name"></small>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+              <small class="field__error" data-error="email"></small>
+            </label>
+            <label class="field">
+              <span>Anything else? (optional)</span>
+              <textarea name="notes" rows="2" placeholder="Links, inspiration, questions…"></textarea>
+            </label>
+          </fieldset>
+
+          <div class="wizard__nav">
+            <button type="button" class="btn btn--ghost" id="wizardBack" hidden>Back</button>
+            <button type="button" class="btn btn--primary" id="wizardNext">Next</button>
+            <button type="submit" class="btn btn--primary" id="wizardSubmit" hidden>Send request</button>
+          </div>
+
+          <!-- Success -->
+          <div class="wizard__done" id="wizardDone" hidden>
+            <div class="wizard__done-mark">✓</div>
+            <h3>Thanks, <span id="doneName">friend</span>!</h3>
+            <p>Your request is in. We'll reach out within one business day to start building together.</p>
+            <button type="button" class="btn btn--ghost" id="wizardReset">Start another</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2>Your website is waiting to be made.</h2>
+        <p>Let's build something you're proud to share.</p>
+        <a href="#start" class="btn btn--primary btn--lg">Start your project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand"><span class="brand__mark">🧵</span><span class="brand__name">Loom</span></a>
+        <p>Websites, built with you.</p>
+      </div>
+      <nav class="footer__col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="#how">How it works</a>
+        <a href="#services">Services</a>
+        <a href="#work">Showcase</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <nav class="footer__col" aria-label="Company">
+        <h4>Company</h4>
+        <a href="#why">Why Loom</a>
+        <a href="#start">Start a project</a>
+        <a href="#top">Back to top</a>
+      </nav>
+      <div class="footer__col">
+        <h4>Get in touch</h4>
+        <a href="mailto:hello@loom.studio">hello@loom.studio</a>
+        <p class="footer__fine">Mon–Fri, 9–5</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Loom Studio. Made collaboratively.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
